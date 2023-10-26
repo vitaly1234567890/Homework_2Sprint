@@ -2,30 +2,45 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+
 }
 
 .error {
+    color: red;
 }
 
 .input {
+    border-radius: 5px;
 }
 
 .input:focus {
 }
 
 .errorInput {
+    border-color: red;
 }
 
 .button {
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 50px;
+    height: 25px;
+    color: white;
+    background-color: blue;
 }
 
 .button:focus {
 }
 
 .button:active {
+
 }
 
 .button:disabled {
+    color: white;
+    background-color: blue;
+    opacity: 0.5;
 }
 
 .text {
