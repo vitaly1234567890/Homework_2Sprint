@@ -8,9 +8,12 @@
 }
 
 .default {
+    background-color: blue;
 }
 
 .red {
+    background-color: #cc0000;
+    color: white;
 }
 
 .default:hover {
