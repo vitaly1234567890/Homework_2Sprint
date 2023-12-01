@@ -1,6 +1,7 @@
 .radio {
     margin-top: 15px;
     margin-right: 10px;
+    accent-color: black;
 }
 
 .radio::before {
@@ -9,14 +10,14 @@
 
 
 .radio:checked::before {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    position: relative;
-    background-color: black;
-    content: '';
-    display: inline-block;
-    border: 2px solid white;
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*border-radius: 10px;*/
+    /*position: relative;*/
+    /*background-color: black;*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*border: 2px solid white;*/
 }
 
 .label {
