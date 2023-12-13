@@ -1,3 +1,4 @@
 .loader {
     /*свг и/или анимация*/
+    background: url('./Loading.svg');
 }
