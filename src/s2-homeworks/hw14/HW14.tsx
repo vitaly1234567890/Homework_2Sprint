@@ -35,7 +35,7 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
-                if (res){
+                if (res) {
                     setTechs(res.data.techs)
                 }
                 setLoading(false)
@@ -48,6 +48,7 @@ const HW14 = () => {
     }
 
     const onChangeText = (value: string) => {
+
         setFind(value)
         // делает студент
         setSearchParams(value)
@@ -58,6 +59,7 @@ const HW14 = () => {
     }
 
     useEffect(() => {
+
         const params = Object.fromEntries(searchParams)
         sendQuery(params.find || '')
         setFind(params.find || '')
