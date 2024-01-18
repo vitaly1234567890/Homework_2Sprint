@@ -1,7 +1,12 @@
 .buttonsContainer {
+
 }
 
 .responseContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 100px;
 }
 
 .imageContainer {
@@ -11,12 +16,32 @@
 }
 
 .textContainer{
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .code {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
 }
 
 .text {
+    width: 510px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .info {
+    width: 510px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
