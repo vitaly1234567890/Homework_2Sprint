@@ -5,7 +5,7 @@ import Polygon5 from './Polygon 5.svg'
 // добавить в проект иконки и импортировать
 const downIcon = Polygon2
 const upIcon = Polygon5
-const noneIcon = ''
+const noneIcon = Polygon5
 
 export type SuperSortPropsType = {
     id?: string
@@ -16,15 +16,8 @@ export type SuperSortPropsType = {
 
 export const pureChange = (sort: string, down: string, up: string) => {
     // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
-    if (sort === '') {
-        return down;
-    } else if (sort === down) {
-        return up;
-    } else if (sort === up) {
-        return '';
-    } else {
-        return down;
-    }
+    return sort === down ? up : sort === up ? '' : down
+
     // исправить
 }
 
