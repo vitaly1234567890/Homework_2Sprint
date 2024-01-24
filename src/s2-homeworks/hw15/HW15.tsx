@@ -51,8 +51,12 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
+
+                if (res) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                }
                 setLoading(false)
-                if (res) setTechs(res.data.techs)
                 // делает студент
 
                 // сохранить пришедшие данные
@@ -80,15 +84,19 @@ const HW15 = () => {
         setSort(newSort)
         // setPage(1) // при сортировке сбрасывать на 1 страницу
         setPage(1)
+        const sortQuery = {sort :newSort}
+        const {sort, page, ...lastQueries}=Object.fromEntries(searchParams)
+        const allQuery = {...lastQueries,...sortQuery}
         // sendQuery(
-        sendQuery({sort: newSort})
+        sendQuery(allQuery)
         // setSearchParams(
-        setSearchParams()
+        setSearchParams(allQuery)
         //
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
+        console.log(params)
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
