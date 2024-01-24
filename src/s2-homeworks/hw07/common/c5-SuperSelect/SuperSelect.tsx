@@ -42,6 +42,8 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         // делают студенты
     }
 
+
+
     const finalSelectClassName = s.select + (className ? ' ' + className : '')
 
     return (
