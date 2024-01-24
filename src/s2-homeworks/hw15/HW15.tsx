@@ -71,8 +71,11 @@ const HW15 = () => {
         setPage(newPage)
         // setCount(
         setCount(newCount)
+        const sortQuery = {page: newPage, count: newCount}
+        const {sort, page, count, ...lastQueries}=Object.fromEntries(searchParams)
+        const allQuery = {...lastQueries,...sortQuery}
         // sendQuery(
-        sendQuery({page: newPage, count: newCount})
+        sendQuery(allQuery)
         // setSearchParams(
         setSearchParams()
         //
