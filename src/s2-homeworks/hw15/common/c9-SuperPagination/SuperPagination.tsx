@@ -3,6 +3,7 @@ import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
 
+
 export type SuperPaginationPropsType = {
     id?: string
     page: number
@@ -48,15 +49,15 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                 показать
             </span>
 
-            <SuperSelect
-                id={id + '-pagination-select'}
-                value={itemsCountForPage}
-                options={[
-                    {id: 4, value: 4},
-                    {id: 7, value: 7},
-                    {id: 10, value: 10},
-                ]}
-                onChangeOption={onChangeSelect}
+            <SuperSelect className={s.superSelect}
+                         id={id + '-pagination-select'}
+                         value={itemsCountForPage}
+                         options={[
+                             {id: 4, value: 4},
+                             {id: 7, value: 7},
+                             {id: 10, value: 10},
+                         ]}
+                         onChangeOption={onChangeSelect}
             />
 
             <span className={s.text2}>

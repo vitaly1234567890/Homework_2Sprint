@@ -1,11 +1,20 @@
 .pagination {
     display: flex;
+    margin: 40px 0 20px 0;
 }
 
 .text1 {
-
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .text2 {
+    font-size: 14px;
+    font-weight: 400;
+}
 
+.superSelect {
+    width: 50px;
+    height: 24px;
+    margin: 0 20px 30px 20px;
 }
